@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CommentBox from './components/CommentBox.jsx'
 
 window.addEventListener('load', function () {
   ReactDOM.render(
-    <h1>App Started</h1>,
+    <CommentBox />,
     document.getElementById('app')
   );
 });

@@ -18,6 +18,16 @@ class CommentBox extends React.Component {
     }
   }
 
+  render() {
+    return (
+      <section className='comment-box'>
+        This is where the film data will be displayed
+      </section>
+    )
+  }
+
 }
 
 export default CommentBox
+
+// <CommentList data={this.state.data}/>
