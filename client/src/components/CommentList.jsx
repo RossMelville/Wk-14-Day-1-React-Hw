@@ -3,6 +3,10 @@ import Comment from './Comment.jsx';
 
 class CommentList extends React.Component {
 
+  render() {
+
+    
+  }
 
 
 }
