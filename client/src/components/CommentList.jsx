@@ -3,13 +3,18 @@ import Comment from './Comment.jsx';
 
 class CommentList extends React.Component {
 
+
   render() {
 
-    const commentNodes = this.props.data.map ( (comment, index) => {
+    const commentNodes = this.props.data.map ( (comment, index, times) => {
       return (
-        <Comment film={comment.film} key={index}>
-          {comment.film}
-        </Comment>
+        <div>
+          <Comment film={comment.film} key={index} times={comment.times}>
+            {comment.film}
+          </Comment>
+          
+        </div>
+        
       )
     })
 
@@ -19,6 +24,9 @@ class CommentList extends React.Component {
       </div>
     )
   }
+
 }
 
 export default CommentList
+
+//onClick={if(comment.show === false) comment.show === true}
